@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+// /* Global Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+// custom variables
+
+$darkblue: #0000a0;
+$orange: #ff8000;
+$grey: #808080;
+$white: #d7e8fd;
+$lightblue: #81a9e2;
+
+html, body {
+  height: 100vh;
+  background: linear-gradient(to top, $white, $lightblue, $darkblue);
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
