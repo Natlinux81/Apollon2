@@ -1,41 +1,43 @@
-<div class="d-flex justify-content-center">
+<div class="position-absolute" style=" width: calc(100%);">
   <div class="container">
-    <h1 class="text-center">Apollon</h1>
-    <p class="text-center fs-3 fw-bold">Auswertung Bogen</p>
-    <div class="row mt-5">
-      <!-- List Group -->
-      <div class="card col-md-4 bg-transparent" style="height: 500px;">
-        <div class="list-group mt-4 overflow-y-scroll" style="max-height: 380px; max-width: 500px;" >
-          <a href="#" class="list-group-item" aria-current="true">
-            The current link item
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-          <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-        </div>
-        <div class="justify-content-end text-center mt-auto mb-3">
-          <button class="btn btn-warning border-3 fs-4" routerLink="/addTournament">Turnier laden</button>
-        </div>
-      </div>
-
-      <!-- Main Content -->
-      <div class="col-md-8">
-        <div class="mt-1 justify-content-center d-flex">
-          <img src="Archery.png" width="300" height="300">
-        </div>
-        <div class="mt-3 text-center">
-          <button class="btn btn-warning border-3 fs-4" routerLink="/addTournament">neues Turnier vorbereiten</button>
-        </div>
-      </div>
+    <div class="text-center mt-3 my-5">
+      <h1>Apollon</h1>
+      <p class="fs-3 fw-bold">Auswertung Bogen</p>
     </div>
+
+      <div class="row justify-content-center">
+        <div class="col-4 mx-auto">
+          <div class="card bg-transparent">
+            <div class="list-group mt-4 overflow-y-auto" style="height: 300px; max-width: 500px;">
+              <a href="#" class="list-group-item" aria-current="true">
+              The current link item
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+              <a href="#" class="list-group-item list-group-item-action">A second link item</a>              </div>
+              <div class="justify-content-end text-center mt-3 mb-3">
+              <button class="btn btn-warning border-3 fs-4" routerLink="/addTournament">Turnier laden</button>
+              </div>
+          </div>
+        </div>
+        <div class="col-4 border border-warning m-auto">
+          <div class="justify-content-center d-flex">
+            <img src="Archery.png" width="300" height="300">
+            </div>
+            <div class="mt-4 text-center">
+            <button class="btn btn-warning border-3 fs-4" routerLink="/addTournament">neues Turnier vorbereiten</button>
+            </div>
+        </div>
+      </div>
   </div>
-</div>
+    </div>
+
+
 
 
 
