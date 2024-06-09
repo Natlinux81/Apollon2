@@ -1,3 +1,5 @@
+@import url('../../../assets/common.scss');
+
 h1{
   color: #ff8000;
   font-weight: bold;
@@ -5,9 +7,19 @@ h1{
   text-shadow: 3px 3px 4px  #808080;
 }
 
-button{
+
+.list-group-item{
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+.list-group-item:hover {
   background-color: #ff8000;
-  border-color: #808080;
-  color: #0000a0;
-  font-weight: bold;
+}
+
+.even {
+  background-color: #808080;
+}
+
+.odd {
+  background-color: #d395b5;
 }

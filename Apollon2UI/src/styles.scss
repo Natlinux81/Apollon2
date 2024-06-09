@@ -16,12 +16,7 @@ $white: #d7e8fd;
 $lightblue: #81a9e2;
 
 html, body {
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to top, $white, $lightblue, $darkblue);
   font-family: "Montserrat", sans-serif;
 }
-
-a {
-  cursor: pointer;
-}
-

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Apollon2API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf6f78bc04ae1a30d5ec82ec6757275698f89eea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9a7b948eda34aee3a5441f20b8067c8943d0420")]
 [assembly: System.Reflection.AssemblyProductAttribute("Apollon2API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Apollon2API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
