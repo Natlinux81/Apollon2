@@ -1,37 +1,100 @@
-<nav *ngIf="showNavbar" class="navbar vh-100 d-flex flex-column p-3" style="width: 280px;">
+<nav *ngIf="showNavbar" class="navbar vh-100 d-flex flex-column p-3 flex-shrink-0" style="width: 280px;">
     <img src="apollon.ico" alt="" width="75px" height="75px">
   <hr>
-  <ul class="nav nav-pills flex-column mb-auto">
-    <li class="nav-item">
-      <a href="#" class="nav-link active" aria-current="page">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-        Dashboard
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-        Orders
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-        Products
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-        Customers
-      </a>
-    </li>
-  </ul>
-</nav>
-
+  <div class="accordion accordion-flush mb-auto" id="accordionFlushExample">
+    <!-- navbar item 1 -->
+<div>
+  <button class="accordion-button collapsed p-1 mb-3" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+    <i class="bi bi-bullseye mx-2"></i>  Item 1
+  </button>
+<div id="flush-collapse1" class="collapse" data-bs-parent="#accordionFlushExample">
+  <div class="accordion-body p-2">
+    <ul class="btn-toggle-nav fw-normal">
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+    <!-- navbar item 2 -->
+    <div>
+      <button class="accordion-button collapsed p-1 mb-3" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+        <i class="bi bi-bullseye mx-2"></i>  Item 2
+      </button>
+    <div id="flush-collapse2" class="collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-2">
+        <ul class="btn-toggle-nav fw-normal">
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+        <!-- navbar item 3 -->
+<div>
+  <button class="accordion-button collapsed p-1 mb-3" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+    <i class="bi bi-bullseye mx-2"></i>  Item 3
+  </button>
+<div id="flush-collapse3" class="collapse" data-bs-parent="#accordionFlushExample">
+  <div class="accordion-body p-2">
+    <ul class="btn-toggle-nav fw-normal">
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+      <li><a href="#" class="nav-link p-2">Overview</a></li>
+      <li><a href="#" class="nav-link p-2">Updates</a></li>
+      <li><a href="#" class="nav-link p-2">Reports</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+    <!-- navbar item 4 -->
+    <div>
+      <button class="accordion-button collapsed p-1 mb-3" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+        <i class="bi bi-bullseye mx-2"></i>  Item 4
+      </button>
+    <div id="flush-collapse4" class="collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body p-2">
+        <ul class="btn-toggle-nav fw-normal">
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+          <li><a href="#" class="nav-link p-2">Overview</a></li>
+          <li><a href="#" class="nav-link p-2">Updates</a></li>
+          <li><a href="#" class="nav-link p-2">Reports</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
