@@ -1,6 +1,7 @@
 {
     "dotnet.defaultSolution": "Apollon2API.sln",
     "cSpell.words": [
+        "apollon",
         "Apollon",
         "devkit",
         "Finalauswertung",

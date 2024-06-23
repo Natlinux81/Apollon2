@@ -1,45 +1,46 @@
 <div class="position-absolute" style="left: 280px; width: calc(100% - 280px)">
   <div class="container p-4">
     <!-- row 1 -->
-    <div class="row align-items-start">
+    <div class="row mb-4 d-flex">
+      <!-- col left -->
       <div class="col">
-        <div class="card p-3 mb-2">
+        <div class="card p-2">
           <h4 class="text-center">Modus</h4>
-          <div class="row align-items-start">
-            <div class="col justify-content-center d-flex">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Modus wählen
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" href="">Halle</button></li>
-                  <li><a class="dropdown-item" href="">im Freien</a></li>
-                  <li><a class="dropdown-item" href="">Feld</a></li>
-                  <li><a class="dropdown-item" href="">3D</a></li>
-                </ul>
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <div>
+                <select #modus (change)="onSelected(modus.value)"
+                  class="form-select"
+                  aria-label="Default select example"
+                  style="width: 165px">
+                  <option selected value="default">Modus wählen</option>
+                  <option value="Halle">Halle</option>
+                  <option value="im Freien">im Freien</option>
+                  <option value="Feld">Feld</option>
+                  <option value="3D">3D</option>
+                </select>
               </div>
             </div>
-            <div class="col">
-              <div class="col text-center">
-                Anzahl <br />
-                Durchgänge
-                <div>
-                  <input class="mt-2 rounded" type="text" style="width: 30px" />
-                </div>
+            <div class="col text-center">
+              Anzahl <br />
+              Durchgänge
+              <div>
+                <input class="mt-2 rounded" type="text" style="width: 30px" />
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center m-2">
+              <img #image alt width="75px" />
             </div>
           </div>
         </div>
       </div>
+      <!-- col right -->
       <div class="col">
-        <div class="text-start card p-3 mb-2">
+        <div class="card p-2">
           <h4 class="text-center">Optionen</h4>
-          <div class="mt-2">
+          <div class="mt-2 mx-5">
             <input
               class="checkbox form-check-input me-2"
               type="checkbox"
@@ -48,7 +49,7 @@
             />
             <label>Meisterschaft</label>
           </div>
-          <div class="mt-2">
+          <div class="mt-2 mx-5">
             <input
               class="checkbox form-check-input me-2"
               type="checkbox"
@@ -57,7 +58,7 @@
             />
             <label>Ergebniserfassung mit Terminals</label>
           </div>
-          <div class="mt-2">
+          <div class="mt-2 mx-5">
             <input
               class="checkbox form-check-input me-2"
               type="checkbox"
@@ -66,7 +67,7 @@
             />
             <label>Turnier mit Finalauswertung</label>
           </div>
-          <div class="mt-2">
+          <div class="mt-2 mx-5">
             <input
               class="checkbox form-check-input me-2"
               type="checkbox"
@@ -78,73 +79,140 @@
         </div>
       </div>
     </div>
+
     <!-- row 2 -->
-    <div class="row align-items-start">
+    <div class="row mb-4">
+      <!-- col left -->
       <div class="col">
-        <div class="card p-3 mb-2">
-          <h4 class="text-center">Gesamtüberschrift Listen</h4>
-          <div class="input-group mb-3 mt-3">
+        <div class="card p-2">
+          <h4 class="text-center">Gesamtüberschrift für Listen</h4>
+          <div class="input-group mb-3 mt-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Organisator" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Organisator"
+              aria-label="Organisator"
+              aria-describedby="basic-addon1"
+            />
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Modus" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Modus"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
 
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Datum" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Datum"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-
         </div>
       </div>
+      <!-- col right -->
       <div class="col">
-        <div class="card p-3 mb-2">
+        <div class="card p-2">
           <h4 class="text-center">Gruppen Überschrift</h4>
-          <div class="input-group mb-3 mt-3">
+          <div class="input-group mb-3 mt-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Organisator" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Organisator"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Modus" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Modus"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
 
-          <div class="input-group mb-3">
+          <div class="input-group mb-3 px-4">
             <span class="input-group-text" id="basic-addon1"></span>
-            <input type="text" class="form-control" placeholder="Datum" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Datum"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-
         </div>
       </div>
     </div>
+
     <!-- row 3 -->
-    <div class="row align-items-start">
-      <div class="col-6 offset-6 align-items-end">
-
-          <div class="card p-3 mb-2">
-            <h4 class="text-center">Überschrift Schusszettel</h4>
-            <div class="input-group mb-3 mt-3">
-              <span class="input-group-text" id="basic-addon1"></span>
-              <input type="text" class="form-control" placeholder="Organisator" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-
-
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"></span>
-              <input type="text" class="form-control" placeholder="Datum" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-
+    <div class="row">
+      <!-- col left -->
+      <div class="col">
+        <div class="card p-2">
+          <h4 class="text-center">Logo Auswahl</h4>
+          
+        </div>
+      </div>
+      <!-- col right -->
+      <div class="col">
+        <div class="card p-2">
+          <h4 class="text-center">Überschrift Schusszettel</h4>
+          <div class="input-group mt-3 mb-3 px-4">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
           </div>
-
+          <div class="input-group mb-3 px-4">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Datum"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
